@@ -13,5 +13,5 @@ This project contains how to select Tree Grid records with hierarchy selection f
 
 * Checkout this project to a location in your disk.
 * Open the solution file using Visual Studio 2022 or later (with .NET 10 SDK installed).
-* * Restore the NuGet packages by rebuilding the solution.
+* Restore the NuGet packages by rebuilding the solution.
 * Run the project.
