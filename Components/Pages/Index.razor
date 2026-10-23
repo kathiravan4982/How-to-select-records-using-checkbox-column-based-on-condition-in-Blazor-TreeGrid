@@ -12,12 +12,12 @@
     <div class="content-wrapper">
         <div class="row">
             <SfTreeGrid @ref="_treeGrid" DataSource="@TreeGridData" IdMapping="TaskID" EnableAutoFill="true"
-                        ParentIdMapping="ParentID" Height="315" TreeColumnIndex="2" AllowPaging="true">
+                        ParentIdMapping="ParentID" Height="315" TreeColumnIndex="1" AllowPaging="true">
                 <TreeGridPageSettings PageSizes="@PageSizes" PageCount="5" PageSize="2"></TreeGridPageSettings>
                 <TreeGridEvents OnActionBegin="ActionBeginHandler" DataBound="OnDataBound" TValue="SelfReferenceData"></TreeGridEvents>
                 <TreeGridColumns>
-                    <TreeGridColumn Type="ColumnType.CheckBox" Width="80"></TreeGridColumn>
                     <TreeGridColumn Field="TaskID" HeaderText="Task ID" Width="80" IsPrimaryKey="true" TextAlign="TextAlign.Right"></TreeGridColumn>
+                    <TreeGridColumn ShowCheckbox Width="120"></TreeGridColumn>
                     <TreeGridColumn Field="TaskName" HeaderText="Task Name" Width="170"></TreeGridColumn>
                     <TreeGridColumn Field="StartDate" HeaderText="Start Date" Format="d" Type=ColumnType.Date Width="100" TextAlign="TextAlign.Right"></TreeGridColumn>
                     <TreeGridColumn Field="EndDate" HeaderText="End Date" Format="d" Type=ColumnType.Date Width="100" TextAlign="TextAlign.Right"></TreeGridColumn>
